@@ -3,7 +3,7 @@ const db = require("./db");
 const PORT = process.env.PORT || 5000;
 
 const express = require("express");
-const cors = required("cors");
+const cors = require("cors");
 const logger = require("morgan");
 
 const routes = require("./routes");

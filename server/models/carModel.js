@@ -12,4 +12,4 @@ const CarModel = new Schema(
   {timestamps: true},
 )
 
-mondule.exports = mongoose.model("car_models", CarModel);
+module.exports = mongoose.model("car_models", CarModel);
