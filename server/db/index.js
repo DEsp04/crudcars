@@ -4,6 +4,7 @@ require("dotenv").config();
 
 let MONGODB_URI = process.env.PROD_MONGODB || process.env.MONGODB_URI || process.env.DB_Cluster_URL;
 
+console.log(MONGODB_URI)
 
 
 mongoose.connect(MONGODB_URI, {
