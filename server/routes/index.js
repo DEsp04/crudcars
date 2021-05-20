@@ -16,6 +16,10 @@ router.put("/carBrands/:id", controllers.updateCarBrand);
 
 router.delete("/carBrands/:id", controllers.deleteCarBrand);
 
+
+router.get("/carModels/:id/carBrands", controllers.getCarsByBrand)
+
+
 router.post("/carModels", controllers.createCar);
 
 router.get("/carModels", controllers.getAllCars);
