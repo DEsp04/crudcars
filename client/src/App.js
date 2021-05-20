@@ -16,14 +16,21 @@ function App(props) {
     <div className="App">
       <h3></h3>
       <Route exact path="/" component={Home} />
-      <Route exact path="/cars/:id" component={Car} />
-      <Route exact path="/add-model" component={createCarModel} />
-      <Route exact path="/create-brand" component={createCarBrand} />
-      <Route exact path="/carBrand" component={CarBrands} />
-      <Route exact path="/items/:id/edit" component={EditCar} />
-      <Route exact path="/carModels/:id/carBrands" component={CarBrand} />
+      <Route exact path="/car-Brands" component={CarBrands} />
+
+      <Route exact path="/add-car-brand-or-model" component={CarBrandOrModelCreate} />
+
+
+
+      <Route exact path="/car-models/:id/edit-car-model" component={CarModeEdit} />
+      <Route exact path="/car-brands/:id/edit-car-brand" component={CarBrandsEdit} />
+      
+
+      <Route exact path="/car-brands/:id/car-models" component={CarBrand} />
+      <Route exact path="/car-brands/:id/car-models/:id" component={CarModel} />
+      
     </div>
   );
 }
 
-export default App;
+export default withRouter(App);
