@@ -1,10 +1,9 @@
-import React from 'react'
+import { useState, useEffect } from "react";
+import Layout from "../shared/Layout"
 
 function CarBrand() {
   return (
-    <div>
-      
-    </div>
+    <Layout></Layout>
   )
 }
 

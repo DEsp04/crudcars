@@ -1,10 +1,9 @@
-import React from 'react'
+import React from 'react';
+import Layout from "../../shared/Layout"
 
 function EditCarModel() {
   return (
-    <div>
-      
-    </div>
+    <Layout></Layout>
   )
 }
 

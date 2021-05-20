@@ -1,10 +1,9 @@
-import React from 'react'
+import React from 'react';
+import Layout from "../../shared/Layout"
 
 function ModelOrBrandCreate() {
   return (
-    <div>
-      
-    </div>
+    <Layout></Layout>
   )
 }
 
