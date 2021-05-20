@@ -30,6 +30,7 @@ function CarBrand(props) {
   return (
     <Layout>
       <h4>{carBrand.title}</h4>
+      <h5>Coutry of Origin: { carBrand.country_of_origin}</h5>
       <a href={carBrand.website_link}
        target="_blank"
        rel="noreferrer">
