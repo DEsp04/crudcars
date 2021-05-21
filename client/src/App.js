@@ -21,7 +21,7 @@ function App() {
 
       <Route exact path="/add-car-brand-or-model" component={CarBrandOrModelCreate} />
 
-      <Route exact path="/car-models/:id/edit-car-model" component={CarModelEdit} />
+      <Route exact path="/car-brands/:id/car-models/:id/edit-car-model" component={CarModelEdit} />
       
       <Route exact path="/car-brands/:id/edit-car-brand" component={CarBrandEdit} />
       
