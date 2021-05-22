@@ -1,9 +1,9 @@
-import React from 'react';
+import { useState, useEffect } from "react";
 import Layout from "../../shared/Layout";
 import ModelForm from "../../shared/form/ModelForm";
 import { modelUrl } from "../../../services/api-helper";
 import axios from "axios";
-import { useState, useEffect } from "react";
+
 
 function EditCarModel(props) {
   const [carModel, setCarModel] = useState({
@@ -28,10 +28,10 @@ function EditCarModel(props) {
 
 
   const handleChange = (e) => {
-    const editField = { [e.target.name]: e.target.value };
-    const edit_model = Object.assign(carModel, editField);
+    const edit_Field = { [e.target.name]: e.target.value };
+    const edit_model = Object.assign(carModel, edit_Field);
 
-    // console.log(edit_brand)
+    // console.log(edit_model)
 
     setCarModel(edit_model);
   }
@@ -55,7 +55,7 @@ function EditCarModel(props) {
       <ModelForm
         handleSubmit={handleSubmit}
         handleChange={handleChange}
-        cancel={`/car-brands/${carModel._id}/car-models/${props.match.params.id}`}
+        cancelPath={`/car-brands/${carModel._id}/car-models/${props.match.params.id}`}
       />
     </Layout>
   )
