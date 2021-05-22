@@ -34,7 +34,6 @@ function CarModel(props) {
     }).catch(console.error)
   }
 
-
   if (!carModel) {
       return <p>loading....</p>
   }

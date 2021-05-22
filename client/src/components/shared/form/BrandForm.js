@@ -17,21 +17,21 @@ function BrandForm({ handleSubmit, handleChange, cancelPath}) {
       <label>Country of Origin: </label>
       <input
         placeholder="origin of car brand"
-        name="country of origin"
+        name="country_of_origin"
         onChange={handleChange}
       />
 
       <label>Website: </label>  
       <input
         placeholder="ex: http://brandlink.com"
-        name="car brand website"
+        name="website_link"
         onChange={handleChange}
       />
 
       <NavLink to={cancelPath}>
         <button>Cancel</button>
       </NavLink>
-      <button type="submit">Submit</button> 
+     <input type="submit" />
     </form>
   )
 }
