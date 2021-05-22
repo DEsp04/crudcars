@@ -19,7 +19,7 @@ function EditCarBrand(props) {
 
 
 
-  console.log(props.match.params.id)
+  // console.log(props.match.params.id)
 
 
   const fetchBrand = async () => {
@@ -42,12 +42,12 @@ function EditCarBrand(props) {
     const editField = { [e.target.name]: e.target.value };
     const edit_brand = Object.assign(editBrand, editField);
 
-    console.log(edit_brand)
+    // console.log(edit_brand)
 
     setEditBrand(edit_brand)
   }
 
-  console.log(editBrand)
+  // console.log(editBrand)
 
   const handleSubmit = async (e) => {
     e.preventDefault();
